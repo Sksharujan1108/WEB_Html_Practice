@@ -3,48 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sk Form</title>
+    <title> Sk Form </title>
   </head>
   <body>
     <center>
-        <div>
-            <label> First Name: </label>
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="Enter your first name"
-            />
-            <br>
-            <br>
-      
-            <label> Last Name: </label>
-            <input
-              type = "text"
-              name = "lastName"
-              id = "lastName"
-              placeholder = "Enter your first name"
-            />
-            <br>
-            <br>
-      
-            <label> Message: </label>
-            <textarea
-              name = "message"
-              id = "message"
-              cols = "30"
-              rows = "10"
-              placeholder = "Enter your message"
-            >
-            </textarea>
-            <br>
-            <br>
+      <div>
+        <form>
+          <table>
+            <!-- First Name -->
+            <tr>
+                <td> 
+                   <label for = "firstName"> First Name: </label>
+                </td>
+
+                <td>
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Enter your first name"
+                  />
+                </td>
+            </tr>
+
+            <!-- Last Name -->
+            <tr>
+                <td>
+                    <label> Last Name: </label>
+                </td>
+
+                <td>
+                    <input
+                        type = "text"
+                        name = "lastName"
+                        id = "lastName"
+                        placeholder = "Enter your first name"
+                    />
+                </td>
+            </tr>
+
+            <!-- Phone Number -->
+             <tr>
+                <td>
+                    <label> Phone Number: </label>
+                </td>
+
+                <td>
+                    <input
+                        type="number"
+                        name="phone_number"
+                        id="phone_number"
+                        placeholder="Enter your Phone Number"
+                    />
+                </td>
+             </tr>
+
+             <!-- Gender -->
+              <tr>
+                <td>
+                    <label> Gender: </label>
+                </td>
+
+                <td>
+                    <input type = "radio" name = 'gender' id = 'male' value = 'male' />
+                    <label for = 'male'> Male </label>
+                    <input type = 'radio' name = 'gender' id = 'female' value = 'female' />
+                    <label for = 'female'> Female </label>
+                    <input type = 'radio' name = 'gender' id = 'other' value = 'other' />
+                    <label for = 'other'> Other </label>
+                </td>
+              </tr>
+
+              <!-- DropDown -->
+               <tr>
+                <td>
+                    <label for="dropdown"> Country </label>
+                </td>
+
+                <td>
+                    <select name = 'dropDown' id = 'dropDown'>
+                        <option> SriLanka </option>
+                        <option> India </option>
+                        <option> Bangladesh </option>
+                        <option> Nepal </option>
+                    </select>
+                </td>
+               </tr>
+
+               <!-- Select Course -->
+                <tr>
+                    <td>
+                        <label for = "course"> Select Course </label>
+                    </td>
+
+                    <td>
+                        <select name = 'course' id = 'course'> 
+                            <option> Machine Language </option>
+                            <option> Python </option>
+                            <option> C++ </option>
+                            <option> C </option>
+                            <option> Javascript </option>
+                            <option> C# </option>
+                            <option> HTML </option>
+                            <option> CSS </option>
+                        </select>
+                    </td>
+                </tr>
+
+             <!-- Message -->
+             <tr>
+                <td>
+                    <label> Message: </label>
+                </td>
+
+                <td>
+                    <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter your message"
+                  >
+                  </textarea>
+                </td>
+             </tr>
+
+             <!-- Button -->
+              <tr>
+                <td 
+                    colspan = '5'
+                    style = "text-align: center;"
+                >
+                    <input 
+                      type ="submit" 
+                      value="Submit" 
+                    />
+                </td>
+              </tr>
             
-            <input 
-              type = "submit" 
-              value = "Submit" 
-            />
-          </div>
+          </table>
+        </form>
+      </div>
     </center>
   </body>
 </html>
