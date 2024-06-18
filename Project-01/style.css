@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 5px;
+    background-color: #7e7a7a;
+}
+
+.root h1 {
+    font-size: 20px;
+    color: #85C014;
+    text-align: center;
+    margin: 20px 0; /* Added margin for spacing */
+}
+.root h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+.root p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+.root a {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
