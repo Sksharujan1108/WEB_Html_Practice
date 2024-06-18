@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 5px;
+    background-color: #facdda;
+}
